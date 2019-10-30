@@ -1,0 +1,30 @@
+version: '2'
+services:
+  web:
+    # build a custom image
+    build:
+      context: .
+      dockerfile: .docker/web.dockerfile
+    # map host port 8080 to container port 80
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/var/www/html/coding_escape_room
+    depends_on:
+      - db
+
+  #Add "127.0.0.1 db" to your hosts file to access the database via hostname on your local machine
+  db:
+    build:
+      context: .
+      dockerfile: .docker/db.dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: coding_escape_room
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+    restart: on-failure
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mariadb/:/var/lib/mysql

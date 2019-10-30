@@ -1,0 +1,21 @@
+{
+  "name": "gaschy/coding_escape_room",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Gaschy",
+      "email": "dominic_vallaster@hotmail.com"
+    }
+  ],
+  "require": {
+    "myclabs/php-enum": "^1.6",
+    "phalcon/devtools": "^3.4",
+    "phalcon/ide-stubs": "^3.4",
+    "vlucas/phpdotenv": "^2.5"
+  },
+  "require-dev": {
+    "phing/phing": "^2.16"
+  }
+}
