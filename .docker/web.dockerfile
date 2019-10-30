@@ -22,3 +22,7 @@ RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install intl
 RUN docker-php-ext-install zip
 RUN a2enmod rewrite
+
+WORKDIR /var/www/html/coding_escape_room
+EXPOSE 8080
+
