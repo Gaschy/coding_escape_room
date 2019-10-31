@@ -16,6 +16,8 @@ class ControllerBase extends Controller
     const ajaxError = "code_error";
     const ajaxNotAllowed="code_not_allowed";
 
+    protected $challengeKey;
+
     /**
      * Setzt den Titel und das Standard-Template
      *
@@ -29,6 +31,37 @@ class ControllerBase extends Controller
 
         if($this->request->isAjax()) {
             $this->view->disable();
+        }
+
+        $this->challengeKey = $this->dispatcher->getParam("challengeKey", "string") ?: "";
+        $this->view->challengeKey = $this->challengeKey;
+    }
+
+    public function redirectProgress(int $progress) {
+        switch($progress) {
+            case 0:
+                $this->redirect("index/index");
+                break;
+            case 1:
+                $this->redirect("cone/index/challengeKey/" . $this->challengeKey);
+                break;
+            case 2:
+                $this->redirect("ctwo/index/challengeKey/" . $this->challengeKey);
+                break;
+            case 3:
+                $this->redirect("cthree/index/challengeKey/" . $this->challengeKey);
+                break;
+            case 4:
+                $this->redirect("cfour/index/challengeKey/" . $this->challengeKey);
+                break;
+            case 5:
+                $this->redirect("cfive/index/challengeKey/" . $this->challengeKey);
+                break;
+            case 6:
+                $this->redirect("complete/index/challengeKey/" . $this->challengeKey);
+                break;
+            default:
+                $this->redirectError("index/index", "Invalid progress");
         }
     }
 

@@ -22,12 +22,17 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-        $key = $this->generateCode();
+
+    }
+
+    public function startAction() {
+        $this->challengeKey = $this->generateCode();
         $session = new Session();
-        $session->setSesKey($key);
+        $session->setSesKey($this->challengeKey);
         $session->setSesStart(date("Y-m-d H:i:s"));
+        $session->setSesProgress(1);
         $session->create();
-        $this->view->key = $key;
+        $this->redirectProgress($session->getSesProgress());
     }
 
     public function generateCode(int $length = 64) : string {

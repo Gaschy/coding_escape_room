@@ -51,7 +51,31 @@ class SecurityPlugin extends Plugin {
             // Public area resources
             $publicResources = array (
                 'index' => array (
-                    'index'
+                    'index',
+                    "start"
+                ),
+                "cone" => array(
+                    "index",
+                    "complete"
+                ),
+                "ctwo" => array(
+                    "index",
+                    "complete"
+                ),
+                "cthree" => array(
+                    "index",
+                    "complete"
+                ),
+                "cfour" => array(
+                    "index",
+                    "complete"
+                ),
+                "cfive" => array(
+                    "index",
+                    "complete"
+                ),
+                "complete" => array(
+                    "index"
                 ),
                 'errors' => array(
                     'show404',
