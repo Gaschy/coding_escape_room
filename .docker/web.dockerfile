@@ -23,6 +23,9 @@ RUN docker-php-ext-install intl
 RUN docker-php-ext-install zip
 RUN a2enmod rewrite
 
+RUN bash -c "curl -sL https://deb.nodesource.com/setup_10.x"
+RUN bash -c "apt install nodejs -y"
+
 WORKDIR /var/www/html/coding_escape_room
 EXPOSE 8080
 

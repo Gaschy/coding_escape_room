@@ -32,5 +32,6 @@
   max-width: 400px !important; /* Max Width of the popover (depending on the container!) */
 }
 
-@import "~codemirror/lib/codemirror.css";
+@import "~prismjs/themes/prism.css";
+@import "~vue-prism-editor/dist/VuePrismEditor";
 @import '~element-ui/lib/theme-chalk/index.css';
