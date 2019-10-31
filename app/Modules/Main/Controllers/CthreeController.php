@@ -77,7 +77,7 @@ class CthreeController extends ControllerBase
                     $this->redirectError("cthree/index/challengeKey/" . $this->challengeKey, "Test cases failed.");
                 }
             } catch(\RuntimeException $e) {
-                $this->redirectError("cfour/index/challengeKey/" . $this->challengeKey, "JS Syntax error");
+                $this->redirectError("cthree/index/challengeKey/" . $this->challengeKey, "JS Syntax error");
             }
         } else {
             $this->redirectError("index/index", "Invalid challenge key");
