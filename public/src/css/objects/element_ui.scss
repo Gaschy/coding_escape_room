@@ -1,0 +1,48 @@
+.el-loading-spinner .el-loading-text, .el-loading-spinner i {
+  color: #48c1b8;
+}
+
+.el-pager li.active, .el-pager li:hover, .el-select-dropdown__item.selected {
+  color: #48c1b8;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #48c1b8;
+  border-color: #48c1b8;
+}
+
+.el-table__append-wrapper {
+  margin-top: 4px;
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: auto;
+      padding: 10px 0 10px 0;
+      .el-icon-upload {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      .el-upload__text {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+.el-upload-dragger {
+  border-radius: 0;
+}
+.el-upload-dragger.is-dragover {
+  border-radius: 0;
+  border-color: $color_primary;
+}
+.el-upload__text {
+  em {
+    color: $color_primary;
+  }
+}
+.el-upload-dragger:hover {
+  border-color: $color_primary;
+}

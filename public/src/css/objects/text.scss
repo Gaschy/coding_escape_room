@@ -1,0 +1,61 @@
+h1 {
+  font-family: Montserrat, serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: Montserrat, serif;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: Montserrat, serif;
+  font-weight: bold;
+}
+h4 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+}
+h5 {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.83rem;
+}
+h6 {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.67rem;
+}
+
+
+
+/* unvisited link */
+a, a:link, .btn.btn-link {
+  color: $color_primary;
+}
+
+.btn.btn-link {
+  font-size: 1rem;
+}
+
+/* visited link
+a:visited {
+  color: green;
+} */
+
+/* mouse over link */
+a:hover, .btn.btn-link:hover {
+  color: $color_secondary;
+}
+
+/* selected link
+a:active {
+  color: blue;
+} */
+
+input[type="text"],input[type=password] {
+  height: 29px !important;
+}
+
+select {
+  height: 29px !important;
+}

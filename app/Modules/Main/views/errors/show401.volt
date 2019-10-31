@@ -1,13 +1,15 @@
-
 {{ content() }}
 
-<div class="jumbotron">
-    <h1>Unauthorized</h1>
-    {% if isLoggedIn is defined AND isLoggedIn %}
-        <p>You don't have access to this option. Contact an administrator</p>
-        <p>{{ link_to('index', 'Home', 'class': 'btn btn-primary') }}</p>
-    {% else %}
-        <p>You don't have access to this option. Please log in.</p>
-        <p>{{ link_to('index', 'Log in', 'class': 'btn btn-primary') }}</p>
-    {% endif %}
+<div class="row justify-content-center">
+    <div class="col-12 col-lg-4">
+        <div class="card login-card">
+            <div class="card-body">
+                <h1>Unuthorized</h1>
+                <div class="text-center">
+                    <p class="lead mt-3">You don't have access to this option.</p>
+                    <p>{{ link_to('index/index', 'Start Coding Challenge', 'class': 'btn btn-primary') }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

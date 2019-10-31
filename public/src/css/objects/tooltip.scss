@@ -1,0 +1,21 @@
+.tooltip {
+  opacity: 0.99;
+}
+.tooltip-inner {
+  background-color: $color_primary;
+  color: #FFFFFF;
+  border-radius: 0;
+  font-size: 1rem;
+}
+.bs-tooltip-top .arrow::before {
+  border-top-color: $color_primary;
+}
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: $color_primary;
+}
+.bs-tooltip-left .arrow::before {
+  border-right-color: $color_primary;
+}
+.bs-tooltip-right .arrow::before {
+  border-right-color: $color_primary;
+}

@@ -1,0 +1,102 @@
+.btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  border: none;
+  border-radius: 0;
+  min-height: 29px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.btn:hover:disabled {
+  border: none;
+  background-color: rgb(129, 189, 185);
+}
+.btn:disabled {
+  border: none;
+  background-color: rgb(129, 189, 185);
+}
+
+a.btn {
+  color: white;
+}
+
+.btn.btn-primary.disabled {
+  background-color: #88D7D1;
+  border-bottom: #88D7D1 4px solid;
+  padding-bottom: 2px;
+}
+
+.btn.btn-primary.disabled:hover {
+  background-color: #88D7D1;
+  border-bottom: $color_primary 4px solid;
+  padding-bottom: 2px;
+}
+
+.btn-primary {
+  background-color: $color_primary;
+  border-bottom: $color_primary 4px solid;
+  padding-bottom: 2px;
+}
+
+.btn-primary:hover {
+  background-color: $color_primary;
+  border-bottom: rgb(47,147,140) 4px solid;
+}
+
+.btn-secondary {
+  cursor: pointer;
+  background-color: rgb(108, 117, 125);
+  border-bottom: rgb(108, 117, 125) 4px solid;
+  padding-bottom: 2px;
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  background-color: rgb(108, 117, 125);
+  border-bottom: #5A6268 4px solid;
+}
+
+.btn-default{
+  background-color: #F0F0F0;
+  border-bottom: #F0F0F0 4px solid;
+  padding-bottom: 2px;
+}
+
+.btn-default:hover{
+  background-color: #F0F0F0;
+  border-bottom: #C0C0C0 4px solid;
+}
+
+.label-button {
+  opacity: 0.6;
+  color: white !important;
+  background-color: #88D7D1;
+  border-bottom: #88D7D1 4px solid;
+  padding-bottom: 2px;
+}
+
+.label-button:hover {
+  background-color: #88D7D1;
+  border-bottom: $color_primary 4px solid;
+  padding-bottom: 2px;
+}
+
+.label-button-clickable {
+  color: white !important;
+  background-color: $color_primary;
+  border-bottom: $color_primary 4px solid;
+  padding-bottom: 2px;
+}
+
+
+.label-button-clickable:hover {
+  background-color: $color_primary;
+  border-bottom: $color_primary 4px solid;
+}

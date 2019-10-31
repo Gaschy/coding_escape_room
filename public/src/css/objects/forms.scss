@@ -1,0 +1,253 @@
+.form-control {
+  border-radius: 0;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  border-width: 0.5px;
+  border-color: rgb(149, 149, 149);
+  border-style: solid;
+  background-color: rgb(242, 242, 242);
+  height: 37px;
+}
+
+input[type=text],input[type=search],input[type=password], textarea, input.el-input-inner {
+  background-color: #f2f2f2;
+  border: 1px solid #eeeeee !important;
+  border-radius: 0;
+}
+
+.input-with-icon {
+  padding-left: 30px;
+}
+
+.inputicon {
+  position: absolute;
+  left: 7px;
+  font-size: 14px;
+  color: #909090;
+  z-index: 1000;
+}
+
+input[type=text]:focus,input[type=search]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgb(129, 189, 185) !important;
+  border: 1px solid rgb(129, 189, 185) !important;
+}
+
+/** == SELECT == **/
+select:active, select:hover, select:focus {
+  outline: none !important;
+  border: 0;
+  box-shadow: 0 0 5px rgb(129, 189, 185) !important;
+  border: 1px solid rgb(129, 189, 185) !important;
+}
+
+option {
+  background-color: rgb(129, 189, 185);
+  color: white;
+}
+
+/**********************************/
+
+
+select.form-control:not([size]):not([multiple]) {
+  height: 37px;
+}
+
+label {
+  font-size: 15px;
+}
+
+.select2-container--bootstrap .select2-selection, .select2-dropdown, .select2-container--bootstrap .select2-search--dropdown .select2-search__field {
+  border-radius: 0;
+  background-color: rgb(243,241,243);
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+.select2-dropdown {
+  z-index: 9001;
+}
+
+.searchclear {
+  position: absolute;
+  right: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #909090;
+  z-index: 1;
+}
+
+.file-drop-zone-title {
+  color: #aaa;
+  font-size: 1.6em;
+  padding: 15px 10px;
+  cursor: default;
+}
+
+.text-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  display: inline-block;
+  margin: 0;
+
+  font-size: 18px;
+
+  border: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none    ;
+  box-shadow: none    ;
+
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+
+  cursor: pointer;
+}
+
+.text-stylableInput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  display: inline-block;
+  margin: 0;
+
+  font-size: 18px;
+
+  border: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none    ;
+  box-shadow: none    ;
+
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+
+  cursor: pointer;
+}
+
+.info-text {
+  font-size: 18px;
+}
+
+.text-stylableInput:focus {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  display: inline-block;
+  font-size: 14px;
+  height: 34px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+#beginDateInput, #endDateInput, #beginTimeInput, #endTimeInput{
+  width: 100px;
+}
+
+
+.glyphicon-ueberschrift {
+  font-size: 18px;
+}
+
+.info-ueberschrift {
+  font-size: 18px;
+}
+
+.info-wert {
+  font-size: 15px;
+  display: inline-block;
+}
+
+/** == TEXTBOX == **/
+input[type=text],input[type=search] {
+  border: 1px solid lightgrey;
+  /*border-radius: 4px; */
+}
+
+/** == DROPDOWN == **/
+
+select {
+  outer-border: 1px solid lightgrey;
+  height: 30px;
+  padding-left: 10px;
+  color: #afafaf;
+  cursor: pointer;
+}
+
+/** == BUTTON == **/
+input[type=submit] {
+  padding: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #48c1b8;
+}
+
+input[type=textarea] {
+  border: 1px solid lightgrey;
+  /*border-radius: 4px; */
+}
+
+.input-group input {
+  height: 29px;
+}
+
+.input-group {
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.form-check-label {
+  font-size: 1rem;
+}
+
+.select2 {
+  max-height: 29px;
+}
+
+.select2-selection__rendered {
+}
+.select2-container .select2-selection--single {
+  height: 29px !important;
+  padding-bottom: 20px;
+}
+.select2-selection__arrow {
+  height: 29px !important;
+}
+
+select option:disabled {
+  background-color: #b6b6b6;
+}
+
+.el-input__suffix .el-input__suffix-inner .el-select__caret {
+  line-height: 30px;
+}

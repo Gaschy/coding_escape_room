@@ -1,0 +1,16 @@
+.login-card h1 {
+  font-family: Montserrat, serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+
+.login-card h1:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-bottom: 3px solid $color_primary;
+  margin-top: 5px;
+}

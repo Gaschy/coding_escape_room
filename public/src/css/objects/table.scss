@@ -1,0 +1,104 @@
+.bootstrap-table .table > th, td {
+  border: none;
+  border-radius: 0;
+}
+
+th, td {
+  border: none;
+  color: #515151;
+}
+
+.fixed-table-container {
+  border-radius: 0;
+  border-top: none;
+  border-bottom: none;
+}
+
+.table td.fit,
+.table th.fit {
+  white-space: nowrap;
+  width: 1%;
+}
+
+/*
+repman report table
+ */
+.fixed-table-pagination{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.fixed-table-container{
+  border-bottom: 1px solid #DDDDDD;
+}
+.pull-left.pagination-detail{
+  //background-color: red;
+  display:inline;
+  float:left;
+}
+
+.pull-right.pagination ul.pagination{
+  margin-top:10px;
+  display:inline;
+  float:left;
+  //background-color: red;
+}
+
+.pull-right.pagination ul.pagination li{
+  //background-color: green;
+  display:inline;
+}
+.columns.columns-right.btn-group.float-right {
+  line-height: 0;
+}
+
+// Bootstrap table Auswahl dropdown X Zeilen pro Seite
+a.dropdown-item.active {
+  background: #48c1b8;
+}
+
+// Bootstrap table Angezeigte Seite
+.pull-right.pagination ul.pagination li.dropdown-item.active, li.page-item.active {
+  background: $color_primary;
+}
+
+.pull-right.pagination ul.pagination li.dropdown-item.active, li.page-item.active .page-link {
+  background: $color_primary;
+  border-color: $color_primary;
+}
+
+.pull-right.pagination ul.pagination li.dropdown-item.active, li.page-item .page-link:hover {
+  color: #16181b;
+}
+
+.pull-right.pagination ul.pagination li.dropdown-item.active, li.page-item.active .page-link:hover {
+  color: white;
+}
+
+.table-toolbox {
+  margin-bottom: 15px;
+}
+
+.el-table {
+  font-size: 1rem;
+
+  th div {
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .filter-input {
+    display: block;
+
+    input {
+      line-height: 30px;
+    }
+  }
+  .input-group {
+    display: flex;
+  }
+  .caret-wrapper {
+    position: absolute;
+    right: 0;
+    top: -5px;
+  }
+}

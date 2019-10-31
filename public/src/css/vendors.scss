@@ -1,0 +1,36 @@
+@import "~bootstrap/scss/bootstrap";
+
+/* w-X und h-X Bootstrap Properties für verschiedene Breakpoints verfügbar */
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @each $prop, $abbrev in (width: w, height: h) {
+      @each $size, $length in $sizes {
+        .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
+      }
+    }
+  }
+}
+
+.page-header {
+  @extend .mb-4;
+  @extend .pb-2;
+  border-bottom: 1px solid $gray-200;
+  padding-bottom: 1.5rem !important;
+}
+.pull-right {
+  @extend .float-right;
+}
+.tooltip {
+  pointer-events: none; /* stops flickering */
+  position: absolute;
+  z-index: 9999;
+}
+
+.popover.confirmation{
+  display: block;
+  max-width: 400px !important; /* Max Width of the popover (depending on the container!) */
+}
+
+@import "~codemirror/lib/codemirror.css";
+@import '~element-ui/lib/theme-chalk/index.css';

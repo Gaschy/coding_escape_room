@@ -34,7 +34,6 @@ class ErrorsController extends ControllerBase
      */
     public function show401Action()
     {
-        $this->view->isLoggedIn = $this->sessionService->isLoggedIn();
         $this->response->setStatusCode(401);
     }
 

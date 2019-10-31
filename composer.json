@@ -13,7 +13,9 @@
     "myclabs/php-enum": "^1.6",
     "phalcon/devtools": "^3.4",
     "phalcon/ide-stubs": "^3.4",
-    "vlucas/phpdotenv": "^2.5"
+    "vlucas/phpdotenv": "^2.5",
+    "nacmartin/phpexecjs": "^2.0",
+    "ext-json": "*"
   },
   "require-dev": {
     "phing/phing": "^2.16"
