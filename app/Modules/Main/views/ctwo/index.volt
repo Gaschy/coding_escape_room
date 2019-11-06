@@ -8,7 +8,7 @@
                 <div id="vue-app">
                     <div class="row">
                         <div class="col-12">
-                            <p class="mt-3 lead">Log in with your administrator password</p>
+                            <p class="mt-3 lead">Log in with your unhackable administrator password</p>
                             <form method="post" action="{{ url.get("ctwo/complete/challengeKey/") ~ challengeKey }}">
                                 <div class="form-group">
                                 <label for="challenge_passphrase">Password:</label>

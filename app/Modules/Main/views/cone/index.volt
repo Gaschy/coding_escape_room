@@ -8,7 +8,7 @@
                 <div id="vue-app">
                     <div class="row">
                         <div class="col-12 mt-3 mb-3">
-                            <p class="mt-3 lead">A splash of color can make all the difference.</p>
+                            <p class="mt-3 lead">The colors may hide a secret text</p>
                             <div class="color-block big" style="background-color: rgb(116, 104, 97)"></div>
                             <div class="color-block" style="background-color: rgb(116, 32, 119)"></div>
                             <div class="color-block" style="background-color: rgb(97, 115, 32)"></div>
