@@ -21,7 +21,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.11.1",
     "@fortawesome/free-solid-svg-icons": "^5.11.1",
     "@fortawesome/vue-fontawesome": "^0.1.5",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "codemirror": "^5.35.0",
     "element-ui": "^2.12.0",
