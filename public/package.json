@@ -26,7 +26,7 @@
     "codemirror": "^5.35.0",
     "element-ui": "^2.12.0",
     "jquery": "^3.3.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "popper.js": "^1.16.0",
     "prismjs": "^1.17.1",
     "vue": "^2.6.10",
