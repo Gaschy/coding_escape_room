@@ -23,7 +23,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.5",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
-    "codemirror": "^5.35.0",
+    "codemirror": "^5.58.2",
     "element-ui": "^2.12.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.11",
